@@ -1,10 +1,14 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className='text-5xl font-bold'>App</div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;
